@@ -162,6 +162,10 @@ body {
     align-self: flex-end;
 }
 
+.features {
+    padding-bottom: 130px;
+}
+
 .features-title {
     margin: 0;
     text-align: center;
@@ -267,3 +271,167 @@ body {
     max-width: 295px;
 }
 
+.program {
+    padding-top: 185px;
+    padding-bottom: 180px;
+    background: url("../img/program-bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.in-program-row {
+    display: flex;
+    margin-bottom: 70px;
+    border: 8px solid transparent;
+    border-image-source: url(../img/program-border.png);
+    border-image-slice: 50;
+    border-image-width: 6;
+    border-image-repeat: stretch;
+}
+
+.in-program-title-block {
+    background: url("../img/program-photo.png") no-repeat center;
+    background-size: contain;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.in-program-title {
+    margin: 0;
+    max-width: 414px;
+
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.in-program-list {
+    display: flex;
+
+    align-self: center;
+    list-style: none;
+    margin: 0 -68px 0 50px;
+    padding: 0;
+    counter-reset: in-program-item;
+}
+
+.in-program-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;
+}
+
+.in-program-item:first-child {
+    width: 220px;
+}
+
+.in-program-item:last-child {
+    width: 320px
+}
+
+.in-program-item::before {
+    counter-increment: in-program-item;
+    content: "0" counter(in-program-item);
+
+    font-family: "Besom 2", sans-serif;
+    font-weight: normal;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    color: white;
+    opacity: 0.15;
+}
+
+.in-program-item-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: white;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.in-program-item-text {
+    color: white;
+    max-width: 300px;
+    margin: 0;
+}
+
+.not-in-program-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.not-in-program-title {
+    margin: 0 0 0 175px;
+
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    color: white;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.not-in-program-title::before {
+    content: "!";
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -175px;
+
+    width: 130px;
+    height: 143px;
+    background: url("../img/program-decor.png");
+    padding-left: 15px;
+    box-sizing: border-box;
+
+    font-family: "Besom 2", sans-serif;
+    font-size: 93px;
+    line-height: 155px;
+    letter-spacing: 0.05em;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.not-in-program-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0 0 0 85px;
+    padding: 0;
+}
+
+.not-in-program-item:first-child {
+    width: 355px;
+    margin-right: 80px;
+}
+
+.not-in-program-item:last-child {
+    width: 222px;
+}
+
+.not-in-program-item-title {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.not-in-program-item-text {
+    margin: 15px 0 0 0;
+
+    color: white;
+}

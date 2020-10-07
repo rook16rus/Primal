@@ -421,6 +421,7 @@ body {
 
 .knowledge {
     padding-top: 145px;
+    padding-bottom: 160px;
 }
 
 .knowledge-title {
@@ -542,4 +543,57 @@ body {
     margin-bottom: 30px;
 
     color: white;
+}
+
+.skills {
+    padding-bottom: 140px;
+
+    background: url("../img/skills-bg.png") no-repeat left 80px;
+}
+
+.skills-title {
+    margin: 0;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    background: url("../img/knowledge-map.png") no-repeat right 335px top;
+}
+
+.skills-item {
+    width: 235px;
+    padding: 60px 20px 35px 65px;
+}
+
+.skills-item:nth-child(1) {
+    margin-right: 260px;
+}
+
+.skills-item:nth-child(2) {
+    margin-right: 140px;
+}
+
+.skills-item:nth-child(3) {
+    margin-right: 100px;
+}
+
+.skills-item:nth-child(4) {
+    margin-right: 60px;
+}
+
+.skills-item:nth-child(5) {
+    margin-right: 40px;
+}
+
+.plan-title {
+    margin: 0;
+    text-align: center;
 }

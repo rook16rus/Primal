@@ -477,3 +477,69 @@ body {
 
     margin: 0;
 }
+
+.knowledge-text {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ff0000;
+
+    max-width: 720px;
+    margin: 85px auto 75px auto;
+}
+
+.safe-list {
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+    margin: 0 -72px 0 0;
+    padding: 0;
+
+    background: url("../img/safe-list.png") no-repeat top left;
+    counter-reset: safe-counter;
+}
+
+.safe-item {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 145px;
+    margin-right: 72px;
+}
+
+.safe-item:nth-child(1) {
+    margin-right: 70px;
+}
+
+.safe-item:nth-child(2) {
+    max-width: 175px;
+}
+
+.safe-item:nth-child(3) {
+    max-width: 160px;
+    margin-right: 68px;
+}
+
+.safe-item:nth-child(4) {
+    max-width: 190px;
+    margin-right: 100px;
+}
+
+.safe-item:nth-child(5) {
+
+}
+
+.safe-item::before {
+    counter-increment: safe-counter;
+    content: counter(safe-counter);
+
+    margin-left: 19px;
+    margin-top: 13px;
+    margin-bottom: 30px;
+
+    color: white;
+}

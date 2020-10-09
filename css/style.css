@@ -663,3 +663,31 @@ a.button {
     color: #ff0000;
     text-transform: uppercase;
 }
+
+.gallery {
+    padding-top: 140px;
+}
+
+.gallery-title {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 0;
+    height: 276px;
+}
+
+.gallery-item {
+    height: 138px;
+}
+
+.gallery-item-big {
+    height: 276px;
+}
